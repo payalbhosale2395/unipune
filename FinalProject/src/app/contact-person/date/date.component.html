@@ -1,0 +1,47 @@
+
+<html lang="en">
+  <body>
+    <div class="form">
+      <div class="row main">
+          <div class="main-login main-center">
+            <form #employeeForm="ngForm" >
+
+    <div class="form-group">
+          <label>Date</label><br>
+          <div class="cols-sm-10">
+            
+              <input class="form-control" name="date" #date="ngModel"
+              [(ngModel)]="employeeService.date" type="date">
+    
+    </div>
+    </div>
+    <div *ngIf="email.errors?.pattern">
+      email is invalid!
+  </div>
+<br>
+    
+<div class="form-group">
+             
+    <label class="cols-sm-2 control-label">In Time</label>
+
+    <div class="cols-sm-10"> 
+       <div class="input-group">
+        <input class="form-control" name="intime" #mobno="ngModel"
+        [(ngModel)]="employeeService.intime" placeholder="00:00" required
+         pattern="[0-9]*">   
+  </div>
+  </div>
+  </div>
+  <br>
+
+    
+    <button  class="btn btn-default" a routerLink="/contact-person" ><i class="fa fa-floppy-o"></i> Submit</button>
+     &nbsp;&nbsp;
+    <button a routerLink="/home" class="btn btn-default"> <i class="fa fa-repeat"></i> Back</button>
+
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+div{
+    margin-top: 0px;
+    border: 1px solid #4CAF50;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+.header{
+    width: 1300px;
+    height: 70px;
+    margin-right:40px;
+    background-color: rgb(46, 77, 179);
+    
+}
+.nav{
+    width: 1300px;
+    height: 60px;
+    background-color: rgb(16, 218, 218);
+    margin-right:40px;
+    overflow:auto;
+    padding:left;
+}
+
+h1{
+    text-align: center;
+    color:yellow;
+}
+
+h5{
+    text-align-last: right; 
+    margin-right:60px;
+    color:yellow;
+    font-weight: bold;
+}
